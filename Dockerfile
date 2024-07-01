@@ -8,11 +8,11 @@ COPY . .
 
 RUN rm -rf node_modules
 
-RUN apt-get update
+#RUN apt-get update
+
+RUN npm install -g gatsby-cli@4.25.0
 
 RUN yarn install
-
-RUN yarn global add gatsby-cli
 
 RUN yarn add sharp
 
